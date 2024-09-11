@@ -1,0 +1,94 @@
+
+.frame-153 {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 48px 115px;
+    background-color: var(--white);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.disabled{
+    all: unset;
+    box-sizing: border-box;
+    margin-top: -1px;
+    color: #0000008b;
+    font-size: 16px;
+    line-height: 19.2px;
+    position: relative;
+    width: fit-content;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    letter-spacing: 0;
+    white-space: nowrap;
+    cursor: not-allowed;
+}
+
+.arrow_position{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+a {
+    color: var(--Ligth-blue, #29abe2);
+    font-family: Inter;
+    font-weight: 400;
+    cursor: pointer;
+    width: 100%;
+}
+
+a:hover {
+    font-weight: 700;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+}
+
+.container mat-form-field + mat-form-field {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.frame-159 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+}
+mat-form-field{
+    width: 422px;
+}
+
+.text-wrapper {
+    position: relative;
+    width: 315px;
+    margin-top: -1px;
+    font-family: var(--version-2-t1-font-family);
+    font-weight: var(--version-2-t1-font-weight);
+    color: #000000;
+    font-size: var(--version-2-t1-font-size);
+    text-align: center;
+    letter-spacing: var(--version-2-t1-letter-spacing);
+    line-height: var(--version-2-t1-line-height);
+    font-style: var(--version-2-t1-font-style);
+    cursor: default;
+}
+
+.frame-176{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    gap: 35px;
+}

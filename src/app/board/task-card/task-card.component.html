@@ -1,0 +1,56 @@
+<div class="frame-119">
+    @if(task.category == "User Story") {
+    <div class="card-board-user-story userStory">
+        <span class="card-board-user-story-text">{{task.category}}</span>
+    </div>
+    }@else {
+    <div class="card-board-user-story technicalTask">
+        <span class="card-board-user-story-text">{{task.category}}</span>
+    </div>
+    }
+    <div class="frame-114">
+        <span class="card-board-title">{{task.title}}</span>
+        <span class="card-board-content">{{task.description}}</span>
+    </div>
+    <div class="card-board-progress">
+        <div class="card-board-progress-bar">
+            @if(calculatePercentage(task.subtasks) != 0){
+                <div class="card-board-progress-bar-filler" [style.width.%]="calculatePercentage(task.subtasks)"></div>
+            }
+        </div>
+        <span class="card-board-count-progress">
+            @if (task.subtasks){
+            @if (task.subtasks.length > 0) {
+            {{getFinishedSubtasks(task)}}/{{task.subtasks.length}} Subtasks
+            }
+            }
+        </span>
+    </div>
+    <div class="frame-139">
+        <div class="frame-217">
+            @for (user of assignableUsers; track $index) {
+            @if (check(user.id ,task.assignedTo) == true && $index < 4) { <div class="card-board-profile-batch">
+                <div class="group-9-board">
+                    {{user.first_name.charAt(0).toUpperCase()}}{{user.last_name.charAt(0).toUpperCase()}}
+                </div>
+        </div>
+        } @else if ($index > 4) {
+        <div class="card-board-profile-batch">
+            <div class="group-9-board grey">
+                +{{$index-4}}
+            </div>
+        </div>
+        }
+        }
+    </div>
+    <div class="card-board-priority">
+        @if (task.prio===3) {
+        <div class="urgent"></div>
+        } @if (task.prio===2) {
+        <div class="medium"></div>
+        }
+        @if (task.prio===1) {
+        <div class="low"></div>
+        }
+    </div>
+</div>

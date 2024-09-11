@@ -1,0 +1,479 @@
+
+.addTask_content {
+    padding: 80px 80px 80px 80px;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    width: calc(100% - 0px);
+}
+
+.pd {
+    width: 200px;
+}
+
+.frame-40 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 73.2px;
+    background-color: #f5f5f5;
+    z-index: 10;
+}
+
+.input_border{
+    padding: 10px; 
+    border: 2px solid #000000b9;
+    border-radius: 4px;
+    display: flex;
+}
+
+.subtasks{
+    position: relative;
+    flex: unset !important;
+    width: 100%;
+    box-sizing: border-box;
+    .mat-mdc-form-field {
+        width: 100%;
+    }
+}
+
+.subtask_options:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.subtask_options{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    .mdc-evolution-chip__action {
+        justify-content: flex-start;
+    }
+}
+
+.addTask_Button_Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    max-width: 970px;
+    .addTask_Buttons{
+        height: 48px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.star{
+    color: red
+};
+
+.addTask_Card{
+    display: flex;
+    justify-content: center;
+    border: unset;
+    background: #f5f5f5;
+    width: 100%;
+}
+
+.addTask_Form{
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 970px;
+    width: 100%;
+    box-sizing: border-box;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right_Card{
+    display: flex;
+    flex-direction: column;  
+    margin-left: 20px;
+    width: 100%;
+}
+
+.left_Card{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+
+}
+
+
+.addTask_content::-webkit-scrollbar {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 120;
+}
+    
+.addTask_content::-webkit-scrollbar-track {
+    border-radius: 0.5vw;
+    width: 1px;  
+    height: 53px;
+    z-index: 120;
+}
+
+.addTask_content::-webkit-scrollbar-thumb {
+    background: #A8A8A8; 
+    border-radius: 5px;
+    z-index: 120;
+}
+
+.prio{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mdc-evolution-chip-set__chips{
+    display: flex;
+    flex-flow:nowrap;
+    height: fit-content;
+}
+
+.vertical-line{
+    height: 100%;
+}
+
+
+div.mat-mdc-chip-set.mdc-evolution-chip-set__chips {
+    display: flex;
+    flex-direction: column !important;
+}
+
+
+@media (max-width: 1340px) {
+    .container-task {
+      align-items: center;
+    }
+  
+    .frame-40 {
+      width: 440px;
+    }
+  
+    .frame-27 {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .secondary {
+      display: none;
+    }
+  
+    .input-fields {
+      display: flex;
+      flex-direction: column;
+    }
+    .vertical-line {
+      display: none;
+    }
+  
+    .priority {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .frame-219 {
+      width: 100%;
+    }
+  
+    .frame-39 {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .addTask_helper {
+      align-items: flex-start;
+    }
+    .disclaimer {
+      top: 1110px;
+      left: 82px;
+    }
+  
+}
+@media (max-width: 1000px) {
+    .addTask_Form {
+        position: relative;
+        top : 40px;
+        height: calc(100% - 0px);
+    }
+    .addTask_content {
+      position: relative;
+      top: 40px;
+      padding: 0px 30px 80px 30px;
+      height: calc(100% - 204px);
+      box-sizing: border-box;
+  }
+    .addTask_Button_Container {
+        position: fixed;
+        bottom: 120px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+        padding: 0 56px;
+        background-color: #f5f5f5;
+    }
+}
+@media (max-width: 900px) {
+  .addTask_content {
+    top: 94px;
+}
+
+.addTask_Button_Container{
+  bottom: 96px;
+}
+    .addTask_content {
+        overflow-y: auto;
+    }
+    .addTask_Form{
+        flex-direction: column;
+    }
+      body {
+        overflow: hidden;
+      }
+      .dropdown-check-list2 .anchor {
+        width: 100%;
+      }
+  
+      .dropdown-check-list .anchor {
+        width: 100%;
+      }
+  
+      .header-text {
+        width: unset;
+      }
+  
+      .frame-40 {
+        padding: 0 16px;
+        gap: 40px;
+        display: flex;
+        margin-bottom: 0;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        justify-content: flex-start;
+        right: 0;
+        width: 100%;
+      }
+
+      .container-task {
+        margin: 0;
+      }
+  
+      .input-fields::-webkit-scrollbar {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        z-index: 20;
+      }
+  
+      .input-fields::-webkit-scrollbar-track {
+        border-radius: 0.5vw;
+        width: 1px;
+        height: 53px;
+        z-index: 20;
+      }
+  
+      .input-fields::-webkit-scrollbar-thumb {
+        background: #a8a8a8;
+        border-radius: 5px;
+        z-index: 20;
+      }
+  
+      .container {
+        padding: 0;
+        top: 0;
+        height: 890px;
+      }
+  
+      .addTask_helper {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: fixed;
+        top: 80px;
+        bottom: 160px;
+        left: 0;
+      }
+  
+      .input-fields {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        flex-direction: column;
+        position: fixed;
+        top: 208px;
+        bottom: 160px;
+        left: 0;
+        width: 100%;
+        padding: 0 8px 16px 16px;
+        justify-content: unset;
+        box-sizing: border-box;
+        align-items: center;
+      }
+  
+      .content-container {
+        padding: 0;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+      }
+  
+      main {
+        position: relative;
+      }
+  
+      .input-fields {
+        flex-direction: column;
+      }
+  
+      .vertical-line {
+        display: none;
+      }
+  
+
+  
+      .title-v1 {
+        width: 100%;
+      }
+  
+      .frame-203 {
+        width: 100%;
+      }
+  
+      .input-title {
+        width: 100%;
+      }
+  
+      .frame-74 {
+        width: 100%;
+      }
+  
+      .frame-39 {
+        margin-left: 0;
+        width: 100%;
+      }
+  
+      .due-date-v1 {
+        width: 100%;
+      }
+  
+      .priority {
+        width: 100%;
+        justify-content: space-between;
+      }
+  
+      .category {
+        width: 100%;
+      }
+  
+      .frame-75 {
+        width: 100%;
+      }
+  
+      .subtask-v1-reconstrution {
+        width: 100%;
+      }
+  
+      .frame-18 {
+        width: 100%;
+      }
+  
+      .frame-27 {
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: -90px;
+        bottom: 96px;
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 16px;
+      }
+      .left_Card{
+        margin: 0;
+    }
+    
+    .right_Card{
+        margin: 0;
+    }
+
+    }
+  
+  
+
+  
+  @media (max-width: 530px) {
+    .priority {
+      width: 100%;
+      flex-direction: column;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+  
+    .priority div {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .close_card_header {
+    padding: 8px;
+    box-sizing: border-box;
+  }
+    .mat-mdc-chip-set-stacked {
+        height: auto;
+    }
+    .mdc-evolution-chip-set__chips{
+        flex-flow: wrap !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .addTask_content {
+      position: relative;
+      top: 73px;
+      padding: 0px 30px 80px 30px;
+      height: calc(100% - 196px);
+      box-sizing: border-box;
+    }
+
+    .addTask_Button_Container{
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column-reverse;
+        height: 120px !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+
+    .secondary {
+      display: none !important;
+    }
+  }

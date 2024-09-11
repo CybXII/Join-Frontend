@@ -1,0 +1,130 @@
+
+.frame-153 {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 48px 115px;
+    background-color: var(--white);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+}
+
+.container mat-form-field + mat-form-field {
+    width: 100%;
+    margin-left: 8px;
+}
+
+.frame-159 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+}
+mat-form-field{
+    width: 422px;
+}
+
+.text-wrapper {
+    position: relative;
+    width: 315px;
+    margin-top: -1px;
+    font-family: var(--version-2-t1-font-family);
+    font-weight: var(--version-2-t1-font-weight);
+    color: #000000;
+    font-size: var(--version-2-t1-font-size);
+    text-align: center;
+    letter-spacing: var(--version-2-t1-letter-spacing);
+    line-height: var(--version-2-t1-line-height);
+    font-style: var(--version-2-t1-font-style);
+    cursor: default;
+}
+
+.frame-176{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    gap: 35px;
+}
+
+@media (max-width: 874px) {
+    .frame-153 {
+        height: fit-content;
+        padding: 20px !important;
+        box-sizing: border-box;
+        gap: 12px;
+        display: flex;
+        justify-content: space-between;
+        min-width: 280px;
+    }
+
+    mat-form-field {
+        width: unset !important; 
+    }
+    .mat-mdc-form-field-flex {
+        width: unset !important;
+    }
+
+    .mat-mdc-text-field-wrapper {
+        width: unset !important; 
+        z-index: 0;
+    }
+
+    .frame-7 {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        position: relative;
+        cursor: pointer;
+        left: 0;
+    }
+    .frame-176 {
+        flex-direction: column;
+        height: unset;
+        width: 50%;
+    }
+    .frame-14 {
+        width: 100%;
+    }
+
+    .frame-6 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form_div {
+        gap: 16px;
+        height: unset;
+    }
+}
+
+@media (max-width: 874px) {
+    .frame-153 {
+        // width: 90%;
+        height: fit-content;
+        padding: 20px;
+        box-sizing: border-box;
+        gap: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    mat-form-field {
+        width: unset;
+    }
+    .mat-mdc-card-content {
+        display: contents;
+    }
+}
+

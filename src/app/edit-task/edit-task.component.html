@@ -1,0 +1,5 @@
+@if (edit) {
+    <app-editpreview (editModeToggled)="toggleEditMode()"></app-editpreview>
+} @else {
+    <app-editable (editModeToggled)="toggleEditMode()"></app-editable>
+}

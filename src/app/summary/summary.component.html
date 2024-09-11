@@ -1,0 +1,90 @@
+<div class="content-container">
+    <div class="container" id="content">
+        <div class="board_window">
+            <div class="frame-40">
+                <span>Join 360</span>
+                <svg class="img2" width="4" height="63" viewBox="0 0 4 63" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector 5" d="M2 2V61" stroke="#29ABE2" stroke-width="3" stroke-linecap="round" />
+                </svg>
+                <p>Key Metrics at a Glance</p>
+                <svg class="img1" width="94" height="4" viewBox="0 0 94 4" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M92 2L2 2" stroke="#29ABE2" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="summary_helper">
+                <div class="frame-71">
+                    <div class="frame-65">
+                        <a class="pencil-rectangle-button-v1" [routerLink]="'tasks'">
+                            <div class="frame-59">
+                                <div class="todo_picture"></div>
+                            </div>
+                            <div class="frame-62">
+                                <span id="summ-tasks-todo">{{todos.length}}</span>
+                                <p>To-do</p>
+                            </div>
+                        </a>
+                        <a class="cheack-reactangle-button-v1"  [routerLink]="'tasks'">
+                            <div class="frame-59">
+                                <div class="done_picture"></div>
+                            </div>
+                            <div class="frame-60">
+                                <span id="summ-tasks-done">{{done.length}}</span>
+                                <p>Done</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="urgency-summary-v1"  [routerLink]="'tasks'">
+                        <app-prios [upcomingDeadline]="upcomingDeadline"></app-prios>
+                        <svg width="2" height="106" viewBox="0 0 2 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="Vector 5" d="M1 1.98828V104.011" stroke="#D1D1D1" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <div class="frame-68">
+                            <span id="summ-upcoming">{{upcomingDeadline ? upcomingDeadline.date.toLocaleDateString() : 'No upcoming deadline found.'}}</span>
+                            <p id="urgent-tasks">Upcoming Deadline</p>
+                        </div>
+                    </div>
+                    <div class="frame-64">
+                        <a class="square-button-v1" [routerLink]="'tasks'">
+                            <div class="frame-61">
+                                <span id="summ-tasks-board">{{tasks.length}}</span>
+                                <p>
+                                    Tasks in<br />
+                                    Board
+                                </p>
+                            </div>
+                        </a>
+                        <a class="square-button-v1"  [routerLink]="'tasks'">
+                            <div class="frame-61">
+                                <span id="summ-tasks-progress">{{progress.length}}</span>
+                                <p>
+                                    Tasks In<br />
+                                    Progress
+                                </p>
+                            </div>
+                        </a>
+                        <a class="square-button-v1"  [routerLink]="'tasks'">
+                            <div class="frame-61">
+                                <span id="summ-tasks-feedback">{{awaitFeedback.length}}</span>
+                                <p>
+                                    Awaiting<br />
+                                    Feedback
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="frame-69">
+                    <span class="header-text" id="summary-greeting"></span>
+                    <span class="footer-text" id="summary-fullname"></span>
+                </div>
+                <div id="frame-69_responsiv" class="frame-69_responsiv frame-69_responsiv_background">
+                    <span class=" header-text" id="summary-greeting-resp"></span>
+                    <span class="footer-text" id="summary-fullname-resp"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

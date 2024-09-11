@@ -1,0 +1,879 @@
+  body {
+    background-color: #f5f5f5;
+    margin: 0px;
+    font-family: 'Inter';
+  }
+
+  html, body { 
+  height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  top: 80px;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  height: calc(100% - 40px);
+}
+
+.mat-mdc-dialog-surface{
+  background: #f5f5f5 !important;
+}
+
+.urgency-summary-v1:hover {
+  background-color: var(--version-2main-color);
+  width: 100%;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.815);
+  app-prios div p{
+    color: #ffffff;
+    .prioline{
+      color: #ffffff  !important;
+    }
+  }
+  .frame-67 .frame-63 p {
+    color: #ffffff
+  }
+  .frame-63{
+    color: #ffffff
+    p{
+      color: #ffffff
+    }
+  }
+#summ-tasks-urgent{
+  color: #fff !important;
+}
+span{
+  color: #ffffff;  
+}
+p{
+  color: #fff;  
+}
+.frame-67 .frame-63 {
+  p{
+    color: #ffffff !important;
+  }
+  color: #ffffff !important;  
+}
+
+.frame-67 .frame-59 .circle {
+  scale: 1.2;
+}
+}
+
+app-board {
+  width: 100%;
+}
+
+.mat-drawer-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.cdk-overlay-container, .cdk-global-overlay-wrapper {
+  pointer-events: none;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cdk-overlay-pane {    
+  border-radius: 30px;
+  position: fixed !important;
+  width: 100% !important;
+  pointer-events: auto;
+  box-sizing: border-box;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px !important;
+  overflow: hidden;
+  .mat-mdc-option{
+    // width: 200%;
+  }
+}
+
+
+.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::before {
+    border: none !important;
+}
+
+  .mat-mdc-chip-set-stacked {
+    flex-direction: column;
+    align-items: center !important;
+    height: 60px;
+    width: 100%;
+}
+
+app-add-task {
+  width: 100vw;
+  background: #f5f5f5;
+  height: 100%;
+}
+
+mat-chip-grid .mdc-evolution-chip-set__chips{
+  display: flex;
+  flex-direction: column !important;
+  height: 100px;
+  overflow-y: auto;
+  margin-left: 0 !important;
+  margin-right: 0;
+}
+.mat-mdc-chip-set .mdc-evolution-chip-set__chips {
+  min-width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0;
+}
+
+.mat-mdc-menu-item-text{
+  color: var(--white);
+}
+
+  .mdc-evolution-chip__action mat-mdc-chip-action .mdc-evolution-chip__action--primary{
+    border: none;
+  }
+  .mat-mdc-chip-set-stacked .mdc-evolution-chip__action--primary{
+    justify-content: center !important;
+  }
+
+  .Urgent.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){
+    background-color: #ff3d00 !important;
+  }
+
+  .Medium.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){
+      background-color: #ffa800 !important;
+  }
+  .Low.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled){
+      background-color: #7ae229 !important;
+  }
+
+.mat-mdc-chip-set .mdc-evolution-chip-set__chips {
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 8px;
+    display: flex;
+    justify-self: center !important;
+    align-items: center !important;
+}
+
+
+.subtasks {
+  input{
+    width: 100%;
+  };
+  .mdc-evolution-chip__action {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .mat-mdc-chip-action-label {
+    width: 100%;
+  }
+}
+
+.mat-mdc-select-panel{
+  width: fit-content !important;
+  overflow: hidden;
+  div{
+    overflow: hidden;
+  }
+}
+
+  .mat-mdc-standard-chip.mat-mdc-standard-chip.mdc-evolution-chip{
+    background-color: var(--white);
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .Low.mat-mdc-standard-chip.Low.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::after {
+    margin-left: 8px;
+    content: url('assets/img/low_nofill.svg');
+  }
+  
+  .Medium.mat-mdc-standard-chip.Medium.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::after {
+    margin-left: 8px;
+    content: url('assets/img/medium_nofill.svg');
+  }
+
+  .Urgent.mat-mdc-standard-chip.Urgent.mat-mdc-standard-chip .mdc-evolution-chip__action--primary::after {
+    margin-left: 8px;
+    content: url('assets/img/urgent_nofill.svg');
+  }
+
+
+  .Low.mat-mdc-standard-chip.Low.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::after {
+    margin-left: 8px;
+    content: url('assets/img/low_fill.svg');
+  }
+
+  .Medium.mat-mdc-standard-chip.Medium.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::after {
+    margin-left: 8px;
+    content: url('assets/img/medium_fill.svg');
+  }
+
+  .Urgent.mat-mdc-standard-chip.Urgent.mat-mdc-standard-chip.mdc-evolution-chip--selected:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--primary::after {
+    margin-left: 8px;
+    content: url('assets/img/urgent_fill.svg');
+  }
+
+  .mdc-evolution-chip-set__chips{
+    display: flex;
+    flex-flow:nowrap !important;
+    
+    .mdc-evolution-chip__checkmark{
+      display: none;
+    }
+    .mat-mdc-standard-chip .mdc-evolution-chip__graphic {
+      width: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+  app-main{  
+    .mat-drawer-container{
+      background-color: #f5f5f5;
+      color: #000;
+    }
+  }
+
+  .mdc-evolution-chip__cell--primary {
+    flex-basis: 100%;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+  .logo_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    animation-delay: 1.8s;
+    background-color: #f6f7f8;
+    z-index: 20;
+    width: 0;
+    height: 0;
+  }
+  
+  .log-in {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f6f7f8;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+
+  .log-in .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--version-2-t6-font-family);
+    font-weight: var(--version-2-t6-font-weight);
+    color: #000000;
+    font-size: var(--version-2-t6-font-size);
+    letter-spacing: var(--version-2-t6-letter-spacing);
+    line-height: var(--version-2-t6-line-height);
+    white-space: nowrap;
+    font-style: var(--version-2-t6-font-style);
+    cursor: default;
+  }
+  
+.button-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 16px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #2a3647;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .button-wrapper-disabled {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 16px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: rgba(89, 87, 87, 0.592);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: not-allowed;
+  }
+  
+.button-wrapper:hover {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: var(--ligth-blue);
+  }
+  
+  .button-wrapper:active {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-color: var(--active-button);
+  }
+
+  .button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 24px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--version-2main-color);
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+    .button-3{
+      color: var(--black)
+    }
+}
+
+.button-secondary:hover {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid;
+  border-color: var(--ligth-blue);
+  .button-3{
+    color: var(--ligth-blue)
+  }
+
+}
+  
+.button-3 {
+    all: unset;
+    box-sizing: border-box;
+    margin-top: -1px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 19.2px;
+    position: relative;
+    width: fit-content;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    letter-spacing: 0;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+
+  
+  .log-in .div {
+    background-color: #f6f7f8;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    transition: 500ms ease-in-out;
+  }
+  
+  .log-in .capa {
+    position: absolute;
+    width: 100px;
+    height: 122px;
+    top: 80px;
+    left: 77px;
+    transition: 500ms ease-in-out;
+  }
+  
+  .big_size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 5000ms ease-in-out;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .d-none {
+    display: none !important;
+  }
+  
+  .big_size svg {
+    position: absolute;
+    width: 50% !important;
+    height: 50% !important;
+    transition: 500ms ease-in-out;
+    top: 25% !important;
+    left: 25% !important;
+  }
+  .mat-drawer-inner-container{
+    overflow: hidden !important;
+  }
+
+
+  .mat-mdc-text-field-wrapper {
+    background: var(--white);
+  }
+  
+  .log-in .capa {
+    position: absolute;
+    width: 100px;
+    height: 122px;
+    top: 80px;
+    left: 77px;
+    transition: 500ms ease-in-out;
+  }
+
+    .capa {
+    position: absolute;
+    top: 80px;
+    left: 77px;
+    width: 100.034px;
+    height: 121.966px;
+    flex-shrink: 0;
+  }
+    
+  .arrow-left-line {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 64px;
+    left: 48px;
+    cursor: pointer;
+  }
+  
+  .arrow-left-line:hover {
+    background-color: #eeeeee;
+    border-radius: 17px;
+    width: 34px;
+    height: 34px;
+  }
+  
+  @keyframes moveUpToCenter {
+    from {
+      transform: translateY(100vh);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 1010px) {
+    .cdk-overlay-pane {
+      position: fixed !important;
+      // width: unset !important;
+      pointer-events: auto;
+      box-sizing: border-box;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: unset;
+      overflow: hidden;
+      background-color: #f5f5f5;
+    }   
+    .mat-mdc-dialog-surface::before {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 80%;
+      top: 0;
+      left: 0;
+      border: 2px solid rgba(0, 0, 0, 0);
+      border-radius: inherit;
+      content: "";
+      pointer-events: none;
+      
+    }
+  }
+    
+  @media (max-width: 900px) {  
+
+    .main {
+        position: relative;
+        display: flex;
+        top: 100px;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        background: #f5f5f5;
+      height: calc(100% - 200px);
+  } 
+  .container {
+    top: 80px;
+    bottom: 96px;
+  }
+
+    .frame-65 {
+      justify-content: space-between;
+    }
+  
+    .frame-64 {
+      height: 116px;
+    }
+
+    .toolbar{
+      width: 100% !important;
+    }
+
+
+    mat-drawer-content {
+      margin-left: 0 !important;
+    }
+  
+    .square-button-v1 {
+      width: 116px;
+      height: 116px;
+      border-radius: 20px;
+      gap: 13px;
+    }
+  
+    .square-button-v1:hover {
+      height: 124px;
+    }
+  }
+    .mat-drawer-inner-container {
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+  }
+
+  .cdk-overlay-container {
+      .mat-mdc-menu-panel{
+        background-color: #2a3647;
+        border-radius: 20px 0px 20px 20px;
+      }
+      .mat-mdc-menu-content{
+          padding: 0;
+      }
+    }
+    .mat-mdc-dialog-surface {
+      overflow: hidden !important;
+    }
+
+    @media (max-width: 400px) {
+      .close_card_header {
+      padding: 8px;
+      box-sizing: border-box;
+    }
+      .mat-mdc-chip-set-stacked {
+          height: auto;
+      }
+      .mdc-evolution-chip-set__chips{
+          flex-flow: wrap !important;
+      }
+    
+    .mat-mdc-dialog-surface {
+        width: 100%;
+        height: 100%;
+        position: fixed !important;
+    }
+    .mainContainer{
+      z-index: auto !important;
+  }
+  .cdk-overlay-container {
+    position: fixed;
+    z-index: 1;
+  }
+}
+
+  :root {  
+    --color-primary:#ff0000;
+    --color-secondary:#f5f5f5;
+    --color-aktiv:#ff9999;
+    --icon: rgba(168, 168, 168, 1);
+    --style: rgba(209, 209, 209, 1);
+    --black: rgba(0, 0, 0, 1);
+    --white: rgba(255, 255, 255, 1);
+    --ligth-blue: rgba(41, 171, 226, 1);
+    --active-button: #091931;
+    --version-2main-color: rgba(42, 54, 71, 1);
+    --version-2-body-font-family: "Inter-Regular", Helvetica;
+    --version-2-body-font-weight: 400;
+    --version-2-body-font-size: 16px;
+    --version-2-body-letter-spacing: 0px;
+    --version-2-body-line-height: 120.00000476837158%;
+    --version-2-body-font-style: normal;
+    --version-2-t7-font-family: "Inter-Regular", Helvetica;
+    --version-2-t7-font-weight: 400;
+    --version-2-t7-font-size: 12px;
+    --version-2-t7-letter-spacing: 0px;
+    --version-2-t7-line-height: 120.00000476837158%;
+    --version-2-t7-font-style: normal;
+    --version-2-t6-font-family: "Inter-Regular", Helvetica;
+    --version-2-t6-font-weight: 400;
+    --version-2-t6-font-size: 20px;
+    --version-2-t6-letter-spacing: 0px;
+    --version-2-t6-line-height: 120.00000476837158%;
+    --version-2-t6-font-style: normal;
+    --version-2-t5-font-family: "Inter-Regular", Helvetica;
+    --version-2-t5-font-weight: 400;
+    --version-2-t5-font-size: 27px;
+    --version-2-t5-letter-spacing: 0px;
+    --version-2-t5-line-height: 120.00000476837158%;
+    --version-2-t5-font-style: normal;
+    --version-2-t2-font-family: "Inter-Medium", Helvetica;
+    --version-2-t2-font-weight: 500;
+    --version-2-t2-font-size: 47px;
+    --version-2-t2-letter-spacing: 0px;
+    --version-2-t2-line-height: 120.00000476837158%;
+    --version-2-t2-font-style: normal;
+    --version-2-t1-font-family: "Inter-Bold", Helvetica;
+    --version-2-t1-font-weight: 700;
+    --version-2-t1-font-size: 61px;
+    --version-2-t1-letter-spacing: 0px;
+    --version-2-t1-line-height: 120.00000476837158%;
+    --version-2-t1-font-style: normal;
+    --drop-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.04);
+    --nuevo: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    --stronger: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --shadoe-backlog-box: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+    --barra-superior: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    --variable-collection-red-40-DA: rgba(253, 91, 79, 1);
+    --variable-collection-blue-85-DA: rgba(18, 70, 88, 1);
+    --md-outlined-text-field-container-shape: 0px;
+    --md-sys-typescale-body-large: 400 1rem system-ui;
+    --md-sys-color-primary: #006a6a;
+    --md-outlined-text-field-label-text-color: #3f4948;
+    --md-outlined-text-field-input-text-color: #161d1d;
+  }
+
+
+/* INTER */
+/* inter-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  src: url('assets/fonts/inter-v13-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: url('assets/fonts/inter-v13-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('assets/fonts/inter-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('assets/fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('assets/fonts/inter-v13-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('assets/fonts/inter-v13-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* POPPINS */
+
+/* poppins-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  src: url('assets/fonts/poppins-v20-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-100italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 100;
+  src: url('assets/fonts/poppins-v20-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('assets/fonts/poppins-v20-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-200italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 200;
+  src: url('assets/fonts/poppins-v20-latin-200italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('assets/fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  src: url('assets/fonts/poppins-v20-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('assets/fonts/poppins-v20-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('assets/fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  src: url('assets/fonts/poppins-v20-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  src: url('assets/fonts/poppins-v20-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  src: url('assets/fonts/poppins-v20-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('assets/fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 800;
+  src: url('assets/fonts/poppins-v20-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('assets/fonts/poppins-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  src: url('assets/fonts/poppins-v20-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

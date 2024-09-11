@@ -1,0 +1,122 @@
+<div class="edit_content">
+    <form [formGroup]="taskForm" (ngSubmit)="saveTask(); onSubmit(formDirective)" #formDirective="ngForm">
+        <mat-card-content class="editTask_Form">
+            <div class="frame-40">
+                Edit Task
+            </div>
+        </mat-card-content>
+
+        <mat-card-content class="editTask_Form">
+            <div class="align_Card">
+                <mat-label>Title<span class="star">*</span></mat-label>
+                <mat-form-field class="w_100" appearance="outline">
+                    <input class="w_100" placeholder="Enter a Title" matInput formControlName="title" required>
+                    @if (taskForm.get('title')?.hasError('required')) {
+                        <mat-error>Title is required</mat-error>
+                    }
+                </mat-form-field>
+
+                <mat-label>Description</mat-label>
+                <mat-form-field appearance="outline">
+                    <textarea class="w_100" placeholder="Enter a Description" matInput formControlName="description"></textarea>
+                </mat-form-field>
+
+                <mat-label>Assigned To</mat-label>
+                <mat-form-field appearance="outline">
+                    <mat-select class="w_100" placeholder="Select contacts to assign" formControlName="assignedTo" multiple>
+                        @for (assigneAble of assigneAbles; track $index) {
+                            <div class="option">
+                            <mat-option [value]="assigneAble.id">
+                                    {{ assigneAble.first_name + " " + assigneAble.last_name }}
+                                </mat-option>
+                            </div>
+                        }
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="align_Card">
+                <mat-label>Choose a date<span class="star">*</span></mat-label>
+                <mat-form-field class="w_100" appearance="outline">
+                    <input class="w_100" matInput [matDatepicker]="picker" formControlName="dueDate"
+                        placeholder="MM/DD/YYYY" [min]="todayDate" required>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    @if (taskForm.get('dueDate')?.hasError('required')) {
+                        <mat-error>Due date is required</mat-error>
+                    }
+                </mat-form-field>
+
+                <div class="prio">
+                    <mat-label>Prio</mat-label>
+                    <mat-chip-listbox class="w_100" appearance="outline" aria-orientation="vertical"
+                        aria-label="Prio" formControlName="priority">
+                        @for (category of categories; track category) {
+                            @if (category !== prio) {
+                                <mat-chip-option (click)="setPrio(category)" class="pd {{category}}">
+                                    {{category}}
+                                </mat-chip-option>
+                            } @else {
+                                <mat-chip-option (click)="setPrio(category)" class="pd {{category}}" _selected="true">
+                                    {{category}}
+                                </mat-chip-option>
+                            }
+                        }
+                    </mat-chip-listbox>
+                </div>
+
+                <mat-label>Category<span class="star">*</span></mat-label>
+                <mat-form-field class="w_100" appearance="outline">
+                    <mat-select class="w_100" placeholder="Select Task Category" formControlName="category" required>
+                        <mat-option value="Technical Task">Technical Task</mat-option>
+                        <mat-option value="User Story">User Story</mat-option>
+                    </mat-select>
+                    @if (taskForm.get('category')?.hasError('required')) {
+                        <mat-error>Category is required</mat-error>
+                    }
+                </mat-form-field>
+
+                <div class="subtasks">
+                    <mat-label for="currentSubtask">Subtasks</mat-label>
+                    <mat-form-field class="w_100" appearance="outline">
+                        <input class="w_100" matInput #subtaskInput placeholder="Add new subtasks"
+                            [matChipInputFor]="chipGrid" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                            (matChipInputTokenEnd)="add($event)">
+                        <mat-chip-grid #chipGrid>
+                            @for (subtask of subtasks(); track $index) {
+                                <mat-chip-row [removable]="true" (removed)="remove(subtask.id)">
+                                    {{subtask.title}}
+                                    <mat-icon matChipRemove>cancel</mat-icon>
+                                </mat-chip-row>
+                            }
+                        </mat-chip-grid>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+
+        <mat-card-content class="editTask_Form">
+            <div class="addTask_Button_Container">
+                <mat-hint>
+                    <span class="star">*</span>
+                    This field is required
+                </mat-hint>
+
+                <div class="addTask_Buttons">
+                    <div class="button-secondary">
+                        <button class="button-3" type="button" (click)="abortForm()">
+                            Abort
+                            <mat-icon>clear</mat-icon>
+                        </button>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="button-3" type="submit" [disabled]="!taskForm.valid">
+                            Save
+                            <mat-icon>check</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+    </form>
+</div>

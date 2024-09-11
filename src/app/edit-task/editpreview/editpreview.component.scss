@@ -1,0 +1,216 @@
+.card_header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.card{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;}
+
+.card-board-user-story {
+    display: flex;
+    padding: 4px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    width: auto;
+}
+
+.card-board-user-story-text {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.close_card_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px
+}
+
+.close_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close_card:hover{
+    border-radius: 50%;
+    background-color: #2a364720;
+}
+
+.card_description{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card_limiter::-webkit-scrollbar {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 20;
+}
+
+.card_limiter::-webkit-scrollbar-track {
+    border-radius: 0.5vw;
+    width: 1px;
+    height: 53px;
+    z-index: 20;
+}
+
+.card_limiter::-webkit-scrollbar-thumb {
+    background: #a8a8a8;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.card_limiter{
+    overflow-y: auto;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.card_title{
+    font-family: Inter;
+    font-size: 61px;
+    font-weight: 700;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.main_infos_card{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2A3647;
+    gap: 24px;
+    width: 100%;
+    display: flex;
+}
+
+.card_subtasks_item p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.main_infos_card{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2A3647;
+    gap: 24px;
+    width: 100%;
+    display: flex;
+}
+
+.main_infos_card span{
+    color: #000;
+}
+
+.card_assigned{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px
+}
+
+.card_assignedTo{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.assigned_name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card_subtasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_subtasks_item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+    padding: 6px 16px 6px 16px;
+}
+
+.card_subtasks_item p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.card_subtasks img{
+    width: 24px;
+}
+
+.card_buttons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    color: #2A3647;
+}
+
+.card_div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    justify-content: center;
+    p{
+        color: #2A3647;
+        margin: 0;
+    }
+    svg{
+        color: #fff;
+    }
+}
+.card_div:hover{
+    font-weight: 900;
+}
