@@ -15,7 +15,7 @@ import { JoinComponent } from './join/join.component';
 
 export const routes: Routes = [
     {
-    path: '',
+    path: 'join-angular/frontend/dist/join_fr/browser/index.html',
     component: LoginComponent,
     children: [
         {
