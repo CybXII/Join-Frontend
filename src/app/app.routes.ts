@@ -15,7 +15,7 @@ import { JoinComponent } from './join/join.component';
 
 export const routes: Routes = [
     {
-    path: 'join-angular/frontend/dist/join_fr/browser/index.html',
+    path: '',
     component: LoginComponent,
     children: [
         {
@@ -108,5 +108,7 @@ export const routes: Routes = [
         },
     ],
     },
+    { path: '', redirectTo: 'join/login', pathMatch: 'full' },
+
     { path: '**', redirectTo: 'join/login', pathMatch: 'full' },
 ];
