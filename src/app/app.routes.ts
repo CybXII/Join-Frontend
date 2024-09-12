@@ -108,7 +108,5 @@ export const routes: Routes = [
         },
     ],
     },
-    { path: '', redirectTo: 'join/login', pathMatch: 'full' },
-
     { path: '**', redirectTo: 'join/login', pathMatch: 'full' },
 ];
