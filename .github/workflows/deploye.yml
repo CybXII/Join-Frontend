@@ -37,6 +37,6 @@ jobs:
         server: ${{secrets.HOST}}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        protocol: ftpes
+        protocol: ftps
         ca-cert: ${{ secrets.CACERTS }}
 
