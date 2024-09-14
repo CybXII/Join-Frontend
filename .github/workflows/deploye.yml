@@ -38,5 +38,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
       with:
         server: ${{secrets.HOST}}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
