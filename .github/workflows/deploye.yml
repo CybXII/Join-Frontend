@@ -30,7 +30,9 @@ jobs:
         npm run build --if-present
     # - name: Run tests
     #   run: npm run test -- --watch=false --browsers=ChromeHeadless
-
+    - name: 📂 Decode CA Certificate
+      run: |
+        echo "${{ secrets.CACERTS }}" | base64 -d > /tmp/cacert.pem
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
@@ -38,5 +40,6 @@ jobs:
         server: ${{secrets.HOST}}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        protocol: ftpes
         cacerts: ${{ secrets.CACERTS }}
 
