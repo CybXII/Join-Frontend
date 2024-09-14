@@ -39,4 +39,5 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         protocol: ftps
         ca-cert: ${{ secrets.CACERTS }}
+        local-dir: frontend/
 
