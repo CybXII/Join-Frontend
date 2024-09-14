@@ -33,10 +33,11 @@ jobs:
     #     npm run test -- --watch=false --browsers=ChromeHeadless
 
 
-
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
       with:
         server: ${{secrets.HOST}}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
+        cacerts: ${{ secrets.CACERTS }}
+
