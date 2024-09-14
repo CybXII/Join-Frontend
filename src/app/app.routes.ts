@@ -1,4 +1,4 @@
-import { ResolveFn, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { BoardComponent } from './board/board.component';
 import { LoginFormComponent } from './login-form/login-form.component';
