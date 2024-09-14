@@ -6,12 +6,10 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
-
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
 
     strategy:
@@ -29,9 +27,10 @@ jobs:
     - name: Install and build
       run: |
         npm i
-    - run: npm run build --if-present
-    - run: npm test
-
+        npm run build --if-present
+    - name: Run tests
+      run: |
+        npm run test -- --watch=false --browsers=ChromeHeadless
 
 
 
