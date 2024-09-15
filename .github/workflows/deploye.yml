@@ -38,6 +38,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         protocol: ftps
         ca-cert: ${{ secrets.CACERTS }}
-        server-dir: ${{secrets.SERVERDIR}}
-        local-dir: ${{secrets.LOCALDIR}}
+        server-dir: frontend/
+        local-dir: E:\Developer Akademie Projects\Join-Frontend\dist\join_fr\browser
 
